@@ -41,6 +41,7 @@ st.title("Enhanced Q&A chatbot with OpenAI")
 # Sidebar
 st.sidebar.title("Settings")
 api_key = st.sidebar.text_input("Enter OpenAI API key:", type="password")
+api_key=st.secrets["OPENAI_API_KEY"]
 
 # dropdown to select open ai models
 llm = st.sidebar.selectbox("Select an OpenAI model", ["gpt-4o", "gpt-4-turbo", "gpt-4"])
