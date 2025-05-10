@@ -9,8 +9,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 #["api_keys"]
-st.write("LANGCHAIN_API_KEY:", st.secrets[api_keys]["LANGCHAIN_API_KEY"])
-st.write("OPENAI_API_KEY:", st.secrets[api_keys]["OPENAI_API_KEY"])
+st.write("LANGCHAIN_API_KEY:", st.secrets["LANGCHAIN_API_KEY"])
+st.write("OPENAI_API_KEY:", st.secrets["OPENAI_API_KEY"])
 
 ## LangSmith tracking
 os.environ['LANGCHAIN_API_KEY']=os.getenv("LANGCHAIN_API_KEY")
