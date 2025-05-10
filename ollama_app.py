@@ -11,8 +11,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 #"api_keys"
-# st.write("LANGCHAIN_API_KEY:", st.secrets["LANGCHAIN_API_KEY"])
-# st.secrets["LANGCHAIN_API_KEY"]
 
 ## Langsmith Tracking
 # os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
