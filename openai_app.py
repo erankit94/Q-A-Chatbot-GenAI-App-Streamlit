@@ -9,11 +9,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 #["api_keys"]
-st.write("LANGCHAIN_API_KEY:", st.secrets["LANGCHAIN_API_KEY"])
+# st.write("LANGCHAIN_API_KEY:", st.secrets["LANGCHAIN_API_KEY"])
 st.write("OPENAI_API_KEY:", st.secrets["OPENAI_API_KEY"])
 
 ## LangSmith tracking
-os.environ['LANGCHAIN_API_KEY']=os.getenv("LANGCHAIN_API_KEY")
+# os.environ['LANGCHAIN_API_KEY']=os.getenv("LANGCHAIN_API_KEY")
 os.environ['LANGCHAIN_TRACING_V2'] = "true"
 os.environ['LANGCHAIN_PROJECT'] = "Simple Q&A Chatbot with OpenAI"
 
